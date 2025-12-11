@@ -62,7 +62,7 @@ const usuarioIniciales = computed(() => {
 
 const cargarUsuario = async () => {
   try {
-    const res = await axios.get('http://localhost:5000/api/users/session', { withCredentials: true })
+    const res = await axios.get('https://backsd2.onrender.com/api/users/session', { withCredentials: true })
     usuario.value = res.data.usuario
   } catch (err) {
     console.error('Error al cargar usuario', err)
@@ -71,7 +71,7 @@ const cargarUsuario = async () => {
 
 const logout = async () => {
   try {
-    await axios.get('http://localhost:5000/api/users/logout', { withCredentials: true })
+    await axios.get('https://backsd2.onrender.com/api/users/logout', { withCredentials: true })
     usuario.value = null
     router.push('/login')
   } catch (err) {
