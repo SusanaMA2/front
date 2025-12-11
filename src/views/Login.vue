@@ -79,6 +79,6 @@ const login = async () => {
 // ------------------ Login con Google ------------------
 const loginGoogle = () => {
   // Redirige al backend que inicia OAuth
-  window.location.href = 'http://localhost:5000/api/users/google/login'
+  window.location.href = 'https://backsd2.onrender.com/api/users/google/login'
 }
 </script>
