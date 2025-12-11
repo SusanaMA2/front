@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
-import apiClient from '../services/apiClient'   // <-- IMPORTANTE
+import apiClient from '../services/api'   // <-- IMPORTANTE
 
 export const authStore = reactive({
   user: JSON.parse(sessionStorage.getItem('user') || "null"),
